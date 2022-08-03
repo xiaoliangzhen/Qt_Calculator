@@ -144,7 +144,7 @@ void Widget::on_btnAmount_clicked()
         ui->lineEdit->setText(ui->lineEdit->text()+"="+QString::asprintf("%f",sum));
     ui->btnAdd->setEnabled(false);
     ui->btnAmount->setEnabled(false);
-    ui->btnSubtract->setEnabled(false);//
+    ui->btnSubtract->setEnabled(false);
     ui->btnMultiply->setEnabled(false);
     ui->btnDivide->setEnabled(false);
 
