@@ -48,18 +48,12 @@ private slots:
 
     void on_btnAmount_clicked();
 
+    void pushStack();
+
 private:
     Ui::Widget *ui;
 
-    double sum;
-
-    void judgeSymbols();
-
-    int symbol;
-
-    QString intNumber;
-
-    double number;
+    int judgeSymbol(QString txt);
 };
 
 #endif // WIDGET_H

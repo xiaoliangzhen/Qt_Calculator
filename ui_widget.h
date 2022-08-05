@@ -24,64 +24,120 @@ QT_BEGIN_NAMESPACE
 class Ui_Widget
 {
 public:
-    QGridLayout *gridLayout_2;
+    QWidget *widget;
     QGridLayout *gridLayout;
-    QPushButton *btn9;
-    QPushButton *btn7;
-    QPushButton *btn4;
-    QPushButton *btn8;
-    QPushButton *btnClean;
-    QLineEdit *lineEdit;
-    QPushButton *btnMultiply;
-    QPushButton *btnDivide;
-    QPushButton *btn5;
-    QPushButton *btn1;
-    QPushButton *btn6;
-    QPushButton *btn2;
-    QPushButton *btn3;
     QPushButton *btn0;
     QPushButton *btnSubtract;
-    QPushButton *btnAmount;
+    QPushButton *btn7;
+    QPushButton *btnDivide;
+    QPushButton *btnClean;
+    QPushButton *btnMultiply;
+    QPushButton *btn9;
     QPushButton *btnAdd;
+    QPushButton *btn4;
+    QPushButton *btn5;
+    QPushButton *btnAmount;
+    QPushButton *btn6;
+    QPushButton *btn8;
+    QPushButton *btn1;
+    QPushButton *btn3;
+    QPushButton *btn2;
+    QLineEdit *lineEdit;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QStringLiteral("Widget"));
-        Widget->resize(524, 249);
-        gridLayout_2 = new QGridLayout(Widget);
-        gridLayout_2->setSpacing(6);
-        gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        gridLayout = new QGridLayout();
+        Widget->resize(526, 215);
+        widget = new QWidget(Widget);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(12, 12, 502, 192));
+        gridLayout = new QGridLayout(widget);
         gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        btn9 = new QPushButton(Widget);
-        btn9->setObjectName(QStringLiteral("btn9"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        btn0 = new QPushButton(widget);
+        btn0->setObjectName(QStringLiteral("btn0"));
 
-        gridLayout->addWidget(btn9, 2, 2, 1, 1);
+        gridLayout->addWidget(btn0, 4, 3, 1, 1);
 
-        btn7 = new QPushButton(Widget);
+        btnSubtract = new QPushButton(widget);
+        btnSubtract->setObjectName(QStringLiteral("btnSubtract"));
+
+        gridLayout->addWidget(btnSubtract, 1, 3, 1, 1);
+
+        btn7 = new QPushButton(widget);
         btn7->setObjectName(QStringLiteral("btn7"));
 
         gridLayout->addWidget(btn7, 2, 0, 1, 1);
 
-        btn4 = new QPushButton(Widget);
-        btn4->setObjectName(QStringLiteral("btn4"));
+        btnDivide = new QPushButton(widget);
+        btnDivide->setObjectName(QStringLiteral("btnDivide"));
 
-        gridLayout->addWidget(btn4, 3, 0, 1, 1);
+        gridLayout->addWidget(btnDivide, 1, 1, 1, 1);
 
-        btn8 = new QPushButton(Widget);
-        btn8->setObjectName(QStringLiteral("btn8"));
-
-        gridLayout->addWidget(btn8, 2, 1, 1, 1);
-
-        btnClean = new QPushButton(Widget);
+        btnClean = new QPushButton(widget);
         btnClean->setObjectName(QStringLiteral("btnClean"));
 
         gridLayout->addWidget(btnClean, 1, 0, 1, 1);
 
-        lineEdit = new QLineEdit(Widget);
+        btnMultiply = new QPushButton(widget);
+        btnMultiply->setObjectName(QStringLiteral("btnMultiply"));
+
+        gridLayout->addWidget(btnMultiply, 1, 2, 1, 1);
+
+        btn9 = new QPushButton(widget);
+        btn9->setObjectName(QStringLiteral("btn9"));
+
+        gridLayout->addWidget(btn9, 2, 2, 1, 1);
+
+        btnAdd = new QPushButton(widget);
+        btnAdd->setObjectName(QStringLiteral("btnAdd"));
+
+        gridLayout->addWidget(btnAdd, 2, 3, 1, 1);
+
+        btn4 = new QPushButton(widget);
+        btn4->setObjectName(QStringLiteral("btn4"));
+
+        gridLayout->addWidget(btn4, 3, 0, 1, 1);
+
+        btn5 = new QPushButton(widget);
+        btn5->setObjectName(QStringLiteral("btn5"));
+
+        gridLayout->addWidget(btn5, 3, 1, 1, 1);
+
+        btnAmount = new QPushButton(widget);
+        btnAmount->setObjectName(QStringLiteral("btnAmount"));
+
+        gridLayout->addWidget(btnAmount, 3, 3, 1, 1);
+
+        btn6 = new QPushButton(widget);
+        btn6->setObjectName(QStringLiteral("btn6"));
+
+        gridLayout->addWidget(btn6, 3, 2, 1, 1);
+
+        btn8 = new QPushButton(widget);
+        btn8->setObjectName(QStringLiteral("btn8"));
+
+        gridLayout->addWidget(btn8, 2, 1, 1, 1);
+
+        btn1 = new QPushButton(widget);
+        btn1->setObjectName(QStringLiteral("btn1"));
+
+        gridLayout->addWidget(btn1, 4, 0, 1, 1);
+
+        btn3 = new QPushButton(widget);
+        btn3->setObjectName(QStringLiteral("btn3"));
+
+        gridLayout->addWidget(btn3, 4, 2, 1, 1);
+
+        btn2 = new QPushButton(widget);
+        btn2->setObjectName(QStringLiteral("btn2"));
+
+        gridLayout->addWidget(btn2, 4, 1, 1, 1);
+
+        lineEdit = new QLineEdit(widget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
@@ -101,64 +157,6 @@ public:
 
         gridLayout->addWidget(lineEdit, 0, 0, 1, 4);
 
-        btnMultiply = new QPushButton(Widget);
-        btnMultiply->setObjectName(QStringLiteral("btnMultiply"));
-
-        gridLayout->addWidget(btnMultiply, 1, 2, 1, 1);
-
-        btnDivide = new QPushButton(Widget);
-        btnDivide->setObjectName(QStringLiteral("btnDivide"));
-
-        gridLayout->addWidget(btnDivide, 1, 1, 1, 1);
-
-        btn5 = new QPushButton(Widget);
-        btn5->setObjectName(QStringLiteral("btn5"));
-
-        gridLayout->addWidget(btn5, 3, 1, 1, 1);
-
-        btn1 = new QPushButton(Widget);
-        btn1->setObjectName(QStringLiteral("btn1"));
-
-        gridLayout->addWidget(btn1, 4, 0, 1, 1);
-
-        btn6 = new QPushButton(Widget);
-        btn6->setObjectName(QStringLiteral("btn6"));
-
-        gridLayout->addWidget(btn6, 3, 2, 1, 1);
-
-        btn2 = new QPushButton(Widget);
-        btn2->setObjectName(QStringLiteral("btn2"));
-
-        gridLayout->addWidget(btn2, 4, 1, 1, 1);
-
-        btn3 = new QPushButton(Widget);
-        btn3->setObjectName(QStringLiteral("btn3"));
-
-        gridLayout->addWidget(btn3, 4, 2, 1, 1);
-
-        btn0 = new QPushButton(Widget);
-        btn0->setObjectName(QStringLiteral("btn0"));
-
-        gridLayout->addWidget(btn0, 4, 3, 1, 1);
-
-        btnSubtract = new QPushButton(Widget);
-        btnSubtract->setObjectName(QStringLiteral("btnSubtract"));
-
-        gridLayout->addWidget(btnSubtract, 1, 3, 1, 1);
-
-        btnAmount = new QPushButton(Widget);
-        btnAmount->setObjectName(QStringLiteral("btnAmount"));
-
-        gridLayout->addWidget(btnAmount, 3, 3, 1, 1);
-
-        btnAdd = new QPushButton(Widget);
-        btnAdd->setObjectName(QStringLiteral("btnAdd"));
-
-        gridLayout->addWidget(btnAdd, 2, 3, 1, 1);
-
-
-        gridLayout_2->addLayout(gridLayout, 0, 0, 1, 1);
-
 
         retranslateUi(Widget);
 
@@ -168,22 +166,22 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QApplication::translate("Widget", "\350\256\241\347\256\227\345\231\250", Q_NULLPTR));
-        btn9->setText(QApplication::translate("Widget", "9", Q_NULLPTR));
-        btn7->setText(QApplication::translate("Widget", "7", Q_NULLPTR));
-        btn4->setText(QApplication::translate("Widget", "4", Q_NULLPTR));
-        btn8->setText(QApplication::translate("Widget", "8", Q_NULLPTR));
-        btnClean->setText(QApplication::translate("Widget", "C", Q_NULLPTR));
-        btnMultiply->setText(QApplication::translate("Widget", "*", Q_NULLPTR));
-        btnDivide->setText(QApplication::translate("Widget", "/", Q_NULLPTR));
-        btn5->setText(QApplication::translate("Widget", "5", Q_NULLPTR));
-        btn1->setText(QApplication::translate("Widget", "1", Q_NULLPTR));
-        btn6->setText(QApplication::translate("Widget", "6", Q_NULLPTR));
-        btn2->setText(QApplication::translate("Widget", "2", Q_NULLPTR));
-        btn3->setText(QApplication::translate("Widget", "3", Q_NULLPTR));
         btn0->setText(QApplication::translate("Widget", "0", Q_NULLPTR));
         btnSubtract->setText(QApplication::translate("Widget", "-", Q_NULLPTR));
-        btnAmount->setText(QApplication::translate("Widget", "=", Q_NULLPTR));
+        btn7->setText(QApplication::translate("Widget", "7", Q_NULLPTR));
+        btnDivide->setText(QApplication::translate("Widget", "/", Q_NULLPTR));
+        btnClean->setText(QApplication::translate("Widget", "C", Q_NULLPTR));
+        btnMultiply->setText(QApplication::translate("Widget", "*", Q_NULLPTR));
+        btn9->setText(QApplication::translate("Widget", "9", Q_NULLPTR));
         btnAdd->setText(QApplication::translate("Widget", "+", Q_NULLPTR));
+        btn4->setText(QApplication::translate("Widget", "4", Q_NULLPTR));
+        btn5->setText(QApplication::translate("Widget", "5", Q_NULLPTR));
+        btnAmount->setText(QApplication::translate("Widget", "=", Q_NULLPTR));
+        btn6->setText(QApplication::translate("Widget", "6", Q_NULLPTR));
+        btn8->setText(QApplication::translate("Widget", "8", Q_NULLPTR));
+        btn1->setText(QApplication::translate("Widget", "1", Q_NULLPTR));
+        btn3->setText(QApplication::translate("Widget", "3", Q_NULLPTR));
+        btn2->setText(QApplication::translate("Widget", "2", Q_NULLPTR));
     } // retranslateUi
 
 };
